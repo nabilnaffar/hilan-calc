@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Hilan Analyzer Plugin",
+  "description": "This extension will calculate hilan hours",
+  "version": "1.0",
+  "permissions": [
+    "tabs",
+    "https://interwise.net.hilan.co.il/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://interwise.net.hilan.co.il/*"
+      ],
+      "js": [
+        "app.js"
+      ]
+    }
+  ]
+}
